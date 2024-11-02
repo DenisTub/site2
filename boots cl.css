@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: darkgray;
+}
+.name {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    color: yellow;
+    font-weight: bold;
+}
+.tap {
+    background-color: black;
+    text-align: center;
+    font-size: 26px;
+    color: yellow;
+    font-weight: lighter;
+}
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4);
+}
+.card {
+    width: 300px;
+    margin: 1.3em;
+}
+img {
+    height: 300px;
+
+} 
+@media (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3);
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4);
+    }
+    .card {
+        margin-inline: 0;
+    }
+}
+.info>p {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
